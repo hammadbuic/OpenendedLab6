@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -96,7 +97,9 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("grades3",grade3);
                 intent.putExtra("grades4",grade4);
                 intent.putExtra("grades5",grade5);
-                Toast.makeText(getApplicationContext(),"Wait While We process your information",Toast.LENGTH_SHORT).show();
+                /*Toast toast=new Toast(getApplicationContext());
+                toast.makeText(getApplicationContext(),"Wait While We process your information",Toast.LENGTH_SHORT).setGravity(Gravity.CENTER_VERTICAL,0,0);
+                toast.show();*/
                 startActivity(intent);
             }
         });
